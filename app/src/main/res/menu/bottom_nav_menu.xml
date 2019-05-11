@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/todoFragment"
+          android:icon="@drawable/bulb"
+          android:title="@string/todoFragment"/>
+    <item android:id="@+id/doingFragment"
+          android:icon="@drawable/hourglass"
+          android:title="@string/doingFragment"/>
+    <item android:id="@+id/doneFragment"
+          android:icon="@drawable/check_circle"
+          android:title="@string/doneragment"/>
+</menu>

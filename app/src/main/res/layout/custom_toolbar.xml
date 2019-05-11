@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/toolbarRl"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/blue"
+        android:layout_height="?attr/actionBarSize">
+    <ImageView
+            android:id="@+id/leftBtn"
+            tools:src="@drawable/bulb"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    <TextView
+            android:id="@+id/midTitle"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            tools:text="Diing"
+            android:textColor="@color/write"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+    <ImageView
+            tools:src="@drawable/plus"
+            android:id="@+id/rightBtn"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+</RelativeLayout>
