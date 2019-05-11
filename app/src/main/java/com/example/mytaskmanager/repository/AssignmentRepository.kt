@@ -8,9 +8,9 @@ import com.example.mytaskmanager.model.AssignmentStatus
 
 class AssignmentRepository(private val assignmentDao: AssignmentDao) {
     val allAssignments: LiveData<List<Assignment>> = assignmentDao.getAllAssignment()
-    val doingAssignments: LiveData<List<Assignment>> = assignmentDao.getTypeAssignment(AssignmentStatus.DOING)
-    val doneAssignments: LiveData<List<Assignment>> = assignmentDao.getTypeAssignment(AssignmentStatus.DONE)
-    val todoAssignments: LiveData<List<Assignment>> = assignmentDao.getTypeAssignment(AssignmentStatus.TODO)
+    val doingAssignments: LiveData<List<Assignment>> = assignmentDao.getTypeAssignment(2)
+    val doneAssignments: LiveData<List<Assignment>> = assignmentDao.getTypeAssignment(3)
+    val todoAssignments: LiveData<List<Assignment>> = assignmentDao.getTypeAssignment(1)
 
     @WorkerThread
     suspend fun insert(assignment: Assignment) {

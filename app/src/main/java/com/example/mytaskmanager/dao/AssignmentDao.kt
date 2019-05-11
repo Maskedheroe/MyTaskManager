@@ -18,5 +18,5 @@ interface AssignmentDao {
     @Query("DELETE FROM assignment_table WHERE code = (:mCode)")
     fun deleteAssignment(mCode: Long)
     @Query("SELECT * from assignment_table WHERE status = (:status)")
-    fun getTypeAssignment(status: AssignmentStatus): LiveData<List<Assignment>>
+    fun getTypeAssignment(status: Int): LiveData<List<Assignment>>
 }

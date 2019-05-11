@@ -65,9 +65,9 @@ class HomeActivity : AppCompatActivity() {
                 when (tab?.position) {
                     0 -> {
                         customToolbar.setRightButton(R.drawable.plus,true)
-                        customToolbar.setRightClickListener(View.OnClickListener {
-                            NewAssignmentActivity.start(this@HomeActivity)
-                        })
+//                        customToolbar.setRightClickListener(View.OnClickListener {
+//                            NewAssignmentActivity.start(this@HomeActivity)
+//                        })
                     }
 
                     1 -> {

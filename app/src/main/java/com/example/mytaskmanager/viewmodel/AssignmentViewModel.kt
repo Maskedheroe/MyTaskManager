@@ -24,7 +24,7 @@ class AssignmentViewModel(application: Application): AndroidViewModel(applicatio
     val doneAssignments: LiveData<List<Assignment>>
 
     init {
-        val assignmentDao = MyTaskRoomDatabase.getDatabase(application).assignmentDao()
+        val assignmentDao = MyTaskRoomDatabase.getDatabase(application,scope).assignmentDao()
         repository = AssignmentRepository(assignmentDao)
         allAssignments = repository.allAssignments
         todoAssignments = repository.todoAssignments
